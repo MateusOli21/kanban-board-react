@@ -53,21 +53,25 @@ const Frame = ({ columns, setColumns }) => {
 
     return (
         <div className="frame-container">
-            <DragDropContext
-                onDragEnd={(result) =>
-                    handleOnDragEnd(result, columns, setColumns)
-                }
-            >
-                {Object.entries(columns).map(([columnId, column]) => {
-                    return (
-                        <Column
-                            key={columnId}
-                            column={column}
-                            columnId={columnId}
-                        />
-                    )
-                })}
-            </DragDropContext>
+            <h2 className="frame-title">CRM - Renda Variável</h2>
+
+            <div className="frame">
+                <DragDropContext
+                    onDragEnd={(result) =>
+                        handleOnDragEnd(result, columns, setColumns)
+                    }
+                >
+                    {Object.entries(columns).map(([columnId, column]) => {
+                        return (
+                            <Column
+                                key={columnId}
+                                column={column}
+                                columnId={columnId}
+                            />
+                        )
+                    })}
+                </DragDropContext>
+            </div>
         </div>
     )
 }

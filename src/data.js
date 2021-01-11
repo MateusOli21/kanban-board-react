@@ -1,28 +1,36 @@
 import { v4 as uuid } from 'uuid'
 
 const tasksList = [
-    { id: uuid(), content: 'Tarefa um' },
-    { id: uuid(), content: 'Tarefa dois' },
-    { id: uuid(), content: 'Tarefa três' },
-    { id: uuid(), content: 'Tarefa quatro' },
-    { id: uuid(), content: 'Tarefa cinco' },
+    { id: uuid(), title: 'Rogério Pereira', content: 'Estruturada' },
+    { id: uuid(), title: 'Lígia Rosvald Gusmão', content: 'Call de Bradesco' },
+    { id: uuid(), title: 'Lígia Rosvald Gusmão', content: 'Call de Bradesco' },
+    { id: uuid(), title: 'Lígia Rosvald Gusmão', content: 'Call de Bradesco' },
+    { id: uuid(), title: 'Rogério Pereira', content: 'Call de Bradesco' },
 ]
 
 const columnsData = {
     [uuid()]: {
-        title: 'Tarefas',
+        title: 'Sem Contato',
         tasks: tasksList,
     },
     [uuid()]: {
-        title: 'A fazer',
+        title: 'Cliente Contatado',
         tasks: [],
     },
     [uuid()]: {
-        title: 'Em progresso',
+        title: 'Aguardando Push',
         tasks: [],
     },
     [uuid()]: {
-        title: 'Completo',
+        title: 'Aguardando E-mail',
+        tasks: [],
+    },
+    [uuid()]: {
+        title: 'Ordem Confirmada',
+        tasks: [],
+    },
+    [uuid()]: {
+        title: 'Boletado/Cancelado',
         tasks: [],
     },
 }

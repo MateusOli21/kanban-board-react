@@ -13,7 +13,8 @@ const Task = ({ task, index }) => {
                     ref={provided.innerRef}
                     className="task"
                 >
-                    <p>{task.content}</p>
+                    <p className="title">{task.title}</p>
+                    <p className="description">{task.content}</p>
                 </div>
             )}
         </Draggable>

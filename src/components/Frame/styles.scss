@@ -1,11 +1,29 @@
 .frame-container {
-    height: 100vh;
+    width: 100%;
+    padding: 0 16px;
     display: flex;
     flex-direction: column;
-    padding: 24px 20px;
 
-    @media screen and (min-width: 720px) {
-        flex-wrap: wrap;
-        flex-direction: row;
+    .frame-title {
+        font-size: 28;
+        text-align: center;
+        margin-top: 28px;
+        color: var(--white-color);
+    }
+}
+
+.frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 940px) {
+        height: calc(100vh - 152px);
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 280px;
+        grid-gap: 8px;
+        overflow-x: auto;
+        padding: 36px 0;
     }
 }
