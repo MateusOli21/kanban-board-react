@@ -5,7 +5,7 @@
     flex-direction: column;
 
     .frame-title {
-        font-size: 28;
+        font-size: 28px;
         text-align: center;
         margin-top: 28px;
         color: var(--white-color);
@@ -21,7 +21,7 @@
         height: calc(100vh - 152px);
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 280px;
+        grid-auto-columns: 240px;
         grid-gap: 8px;
         overflow-x: auto;
         padding: 36px 0;

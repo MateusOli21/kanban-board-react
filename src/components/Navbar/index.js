@@ -24,7 +24,7 @@ const Navbar = () => {
                     <li>Home</li>
                     <li>Coldcall</li>
                     <li>Produtos</li>
-                    <li>Renda Váriavel</li>
+                    <li>Renda Variável</li>
                     <li>IP</li>
                     <li>Câmbio</li>
                     <li>Guru</li>
