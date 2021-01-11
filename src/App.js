@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+
+import { columnsData } from './data'
+import Frame from './components/Frame'
+
+import './App.scss'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [columns, setColumns] = useState(columnsData)
+
+    return (
+        <div className="App">
+            <Frame columns={columns} setColumns={setColumns} />
+        </div>
+    )
 }
 
-export default App;
+export default App

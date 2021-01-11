@@ -1,0 +1,11 @@
+.frame-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+
+    @media screen and (min-width: 720px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}

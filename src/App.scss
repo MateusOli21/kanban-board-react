@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+input,
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #23d366;
+    --black-color: #161616;
+    --white-color: #fff;
+    --white-bg-color: #f7f7f7;
+    --gray-color: #a0a0a0;
+}
+
+.App {
+    height: 100vh;
+    background: var(--white-bg-color);
+}
