@@ -12,4 +12,4 @@ Veja o projeto - [Link para o site](https://kanban-challenge.netlify.app/)
 
 ### Demo
 
-![desktop version](./src/assets/videos/kanban-board.gif)
+![desktop version](./src/assets/videos/kanban-ewz.gif)
