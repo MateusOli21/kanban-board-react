@@ -7,23 +7,22 @@
     .frame-title {
         font-size: 28px;
         text-align: center;
-        margin-top: 28px;
+        margin: 36px 0 42px;
         color: var(--white-color);
     }
-}
 
-.frame {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    .frame {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
 
-    @media screen and (min-width: 940px) {
-        height: calc(100vh - 152px);
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 240px;
-        grid-gap: 8px;
-        overflow-x: auto;
-        padding: 36px 0;
+        @media screen and (min-width: 940px) {
+            height: calc(100vh - 200px);
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 240px;
+            grid-gap: 8px;
+            overflow-x: auto;
+        }
     }
 }
